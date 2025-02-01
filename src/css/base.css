@@ -7,7 +7,7 @@
   font-weight: 400;
 
   color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  background-color: rgba(202, 219, 156, 0.87);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,9 +19,12 @@
 body {
   display: flex;
   flex-direction: column;
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 100%; /* Виправлено з min-width */
+  height: 100vh; /* Можна використовувати без min-height */
   margin: 0;
+
+  /* overflow-x: hidden; */
+  /* Додано, щоб уникнути горизонтального скролу */
 }
 
 main {
